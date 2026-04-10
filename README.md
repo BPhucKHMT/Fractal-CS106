@@ -61,4 +61,4 @@ npm run dist
 *   [Neutralino.js Documentation](https://neutralino.js.org/)
 
 ---
-**CS106 - Final Project**
+**CS106 - Fractal Project**
