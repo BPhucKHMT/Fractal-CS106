@@ -1,6 +1,7 @@
 # 🌌 Fractal Explorer — WebGL & Neutralino.js
 
 Dự án đồ họa WebGL raw chuyên sâu về thế giới Fractal, được đóng gói thành ứng dụng desktop siêu nhẹ sử dụng Neutralino.js. Dự án được thực hiện cho môn học **CS106 - Đồ họa máy tính**.
+<img width="1012" height="761" alt="image" src="https://github.com/user-attachments/assets/48f00b0a-9a87-4b7b-b5df-81dad60581f4" />
 
 ## 🎨 Tính năng chính
 
