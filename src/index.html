@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fractal Graphics Explorer - Koch Snowflake, Minkowski Island, Sierpinski Triangle & Carpet rendered with WebGL">
+    <title>Fractal Explorer — WebGL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h1>Fractal Explorer</h1>
+            </div>
+            <nav id="fractal-nav">
+                <button class="nav-item active" data-fractal="koch">
+                    <span class="nav-icon">❄</span>
+                    <span class="nav-label">Koch Snowflake</span>
+                </button>
+                <button class="nav-item" data-fractal="minkowski">
+                    <span class="nav-icon">🏝</span>
+                    <span class="nav-label">Minkowski Island</span>
+                </button>
+                <button class="nav-item" data-fractal="sierpinski-triangle">
+                    <span class="nav-icon">△</span>
+                    <span class="nav-label">Sierpinski Triangle</span>
+                </button>
+                <button class="nav-item" data-fractal="sierpinski-carpet">
+                    <span class="nav-icon">▦</span>
+                    <span class="nav-label">Sierpinski Carpet</span>
+                </button>
+            </nav>
+        </aside>
+        <main id="main-content">
+            <div id="canvas-container">
+                <canvas id="gl-canvas"></canvas>
+            </div>
+            <div id="controls">
+                <div class="control-group">
+                    <label for="iteration-slider">Iteration: <span id="iteration-value">0</span></label>
+                    <input type="range" id="iteration-slider" min="0" max="7" value="0" step="1">
+                </div>
+                <div class="control-group control-buttons">
+                    <button id="btn-play" title="Play animation">▶ Play</button>
+                    <button id="btn-reset" title="Reset view">↺ Reset</button>
+                    <button id="btn-fit" title="Fit to screen">⊞ Fit</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

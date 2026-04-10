@@ -1,0 +1,23 @@
+{
+  "name": "fractal-explorer",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dist": "npm run build && npx @neutralinojs/neu build --embed-resources && node -e \"const fs=require('fs'); if(fs.existsSync('Release')) fs.rmSync('Release', {recursive:true, force:true}); fs.mkdirSync('Release', {recursive:true}); fs.copyFileSync('dist/fractal-explorer/fractal-explorer-win_x64.exe', 'Release/FractalExplorer.exe');\""
+  },
+  "keywords": [
+    "fractal",
+    "webgl",
+    "koch",
+    "sierpinski",
+    "minkowski"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Fractal Graphics Explorer - Koch Snowflake, Minkowski Island, Sierpinski Triangle & Carpet rendered with WebGL",
+  "devDependencies": {
+    "vite": "^8.0.8"
+  }
+}
